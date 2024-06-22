@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.meow</groupId>
-    <artifactId>cat-realem</artifactId>
+    <artifactId>cat-realm</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>cat-realem</name>
-    <description>cat-realem</description>
+    <name>cat-realm</name>
+    <description>cat-realm</description>
     <url/>
     <licenses>
         <license/>

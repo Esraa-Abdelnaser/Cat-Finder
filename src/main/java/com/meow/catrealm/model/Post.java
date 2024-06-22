@@ -1,9 +1,13 @@
-package com.meow.catrealem.model;
+package com.meow.catrealm.model;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter
+@Setter
 @Entity
-public class Post {
+public class Post extends BaseEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "post_seq")
@@ -12,7 +16,7 @@ public class Post {
     private String image;
     private String text;
     private Integer likes;
-
+    @JoinColumn(name = "cat_id")
     @ManyToOne
     private CatUser catUser;
 }
